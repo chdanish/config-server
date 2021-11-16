@@ -14,4 +14,6 @@ spring:
 management:
   endpoints:
     web:
-      exposure.include: hystrix.stream, health, info, refresh
+      exposure:
+        include:
+        - "*"
